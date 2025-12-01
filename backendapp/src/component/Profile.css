@@ -1,0 +1,30 @@
+.namewrole{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.name{
+    color: #052651;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 0;
+}
+.role{
+    color: #6B7280;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+}
+.profilewnamewrole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 50px 0px 20px 0px;
+}

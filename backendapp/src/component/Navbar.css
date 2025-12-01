@@ -1,7 +1,15 @@
 .navbar{
-    width: 205px;
-height: 2018px;
+    width: 255px;
+height: 100vh;
 background: #ffffff;
 display: flex;
 flex-direction: column;
+justify-content: center;
+    justify-content: start;
+    position: fixed;
+    z-index: 100;
+
+}
+.formargintop{
+    margin-top: 230px;
 }

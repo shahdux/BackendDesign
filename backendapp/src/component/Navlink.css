@@ -10,10 +10,10 @@ line-height: normal;
     color: #014AB6
 }
 .iconwithnavlink{
-    width: 205px;
+   
     height: 66px;
     display: flex;
-    justify-content: center;
+       padding-left: 30px;
     align-items: center;
     gap: 12px;
     transition: 0.5s ease;
@@ -24,6 +24,4 @@ line-height: normal;
 .iconwithnavlink:hover .navlink{
      color: #014AB6
 }
-.navicon:hover{
- color: #014AB6
-}
+
