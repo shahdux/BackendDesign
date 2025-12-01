@@ -1,0 +1,14 @@
+.navlink{
+    color: #6B7280;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.iconwithnavlink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
