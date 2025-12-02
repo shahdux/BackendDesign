@@ -5,6 +5,8 @@ import SectionTitle from '../component/SectionTitle';
 import StatisticCard from '../component/StatisticCard';
 import visitsdata from "../assets/data.svg"
 import TableHeader from '../component/TableHeader';
+import StrokeButton from '../component/StrokeButton';
+
 const Projects = () => {
     return ( 
         <>
@@ -12,8 +14,8 @@ const Projects = () => {
         <Navbar/>
         <div className='mainBar'>
             <div className='titlewsearch'>
-            <SectionTitle Sectiontitle="Welcome back, Shahd"/>
-            <input className='searchcont' type="text" name="" id="" placeholder='Search' />
+            <SectionTitle Sectiontitle="Project Management"/>
+            <StrokeButton strokebtext="Add project"/>
 
             </div>
             <div className='forstatCards'>
