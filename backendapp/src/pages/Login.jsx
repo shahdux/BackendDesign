@@ -3,6 +3,7 @@ import "./Login.css";
 import loginimg from "../assets/loginimg2.svg";
 import logo from "../assets/logo.svg";
 import Button from '../component/Button';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return ( 
@@ -33,11 +34,12 @@ const Login = () => {
                         </div>
                         <p className='forgetpass'>Forgot password?</p>
                     </div>
-                    <Button logintext="Login"/>
+                    <Link to ="/" className="no-underline">
+                    <Button buttontext="Login"/></Link>
 
                 <p className='signup'>Dont have an account? <span className='signup2'> Sign Up</span></p>
                 </div>
-                <img src={loginimg} alt="illustration" />
+                <img src={loginimg} alt="illustration"/>
             </div>
         </div>
         

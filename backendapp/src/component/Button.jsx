@@ -4,7 +4,7 @@ const Button = (props) => {
     return ( 
         <>
         <div className='loginButton'>
-            <p className='logintext'>{props.logintext}</p>
+            <p className='logintext'>{props.buttontext}</p>
         </div>
         </>
      );

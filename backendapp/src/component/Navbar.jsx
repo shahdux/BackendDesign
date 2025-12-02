@@ -12,6 +12,7 @@ import logout from '../assets/log.svg';
 
 
 import Profile from './Profile';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return ( 
@@ -20,9 +21,11 @@ const Navbar = () => {
             <Navlink linkicon={dashboardicon}
             linktitle="Dashboard"/>
                <Navlink linkicon={categories}
-            linktitle="Categories"/>   
+            linktitle="Categories"/> 
+             <Link to ="/projects" className="no-underline">
             <Navlink linkicon={projects}
             linktitle="Projects"/>   
+             </Link>  
             <Navlink linkicon={Messages}
             linktitle="Messages"/>  
               <Navlink linkicon={Settings}
@@ -30,9 +33,9 @@ const Navbar = () => {
              <Navlink linkicon={Pages}
             linktitle="Pages"/>
             <div className='formargintop'></div>
-            
+            <Link to ="/login" className="no-underline">
             <Navlink linkicon={logout}
-            linktitle="Log out"/>
+            linktitle="Log out"/></Link>
 
             
         </div>
