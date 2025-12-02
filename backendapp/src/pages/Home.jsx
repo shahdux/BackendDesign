@@ -3,6 +3,8 @@ import "./Home.css"
 import Navbar from '../component/Navbar';
 import SectionTitle from '../component/SectionTitle';
 import StatisticCard from '../component/StatisticCard';
+import visitsdata from "../assets/data.svg"
+import TableHeader from '../component/TableHeader';
 const Home = () => {
     return ( 
         <>
@@ -26,9 +28,25 @@ const Home = () => {
                 statnumber="430"
                 />
             </div>
+            <div className='titlewsection'>
             <div className='titlewsearch'>
                 <SectionTitle textsize="24px" 
                 Sectiontitle="Website Visits"/>
+                
+            </div>
+<img src={visitsdata} alt="website visits" />
+            </div>
+               <div className='titlewsection'>
+            <div className='titlewsearch'>
+                <SectionTitle textsize="24px" 
+                Sectiontitle="Recent Projects"/>
+                
+            </div>
+<div className='recentprojectsDiv'>
+    <div className='forfirstline'>
+       <TableHeader tableheadertext="Project"/>
+    </div>
+</div>
             </div>
         </div>
             

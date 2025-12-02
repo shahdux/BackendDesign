@@ -43,3 +43,20 @@ line-height: normal;
     flex-wrap: wrap;
     gap: 20px;
 }
+.titlewsection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.recentprojectsDiv{
+    display: flex;
+width: 979px;
+height: 287px;
+padding: 10px 20px;
+justify-content: center;
+align-items: center;
+gap: 362px;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.59);
+}
