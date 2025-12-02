@@ -22,6 +22,7 @@ body{
     align-items: center;
     gap: 52px;
     width: 73%;
+    flex-wrap: wrap;
 }
 .searchcont{
     border-radius: 88px;
@@ -30,6 +31,7 @@ background: var(--White, #FFF);
 width: 58%;
 height: 52px;
 padding-left: 20px;
+
 }
 ::placeholder{
     color:  #A9A9A9;
