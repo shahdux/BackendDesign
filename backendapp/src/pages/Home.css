@@ -12,8 +12,9 @@ body{
     justify-content: center;
     align-items: center;
     height: auto;
-    padding: 80px 0px;
+    padding: 50px 0px;
         margin-left: 256px;
+            gap: 30px;
 }
 .titlewsearch{
     display: flex;
@@ -26,7 +27,7 @@ body{
     border-radius: 88px;
 border: 1px solid var(--Stroke, #E8E8E8);
 background: var(--White, #FFF);
-width: 48%;
+width: 58%;
 height: 52px;
 padding-left: 20px;
 }
@@ -42,21 +43,62 @@ line-height: normal;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    width: 75%;
 }
 .titlewsection{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+.titlewsection2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 73%;
+    
+}
 .recentprojectsDiv{
     display: flex;
-width: 979px;
-height: 287px;
-padding: 10px 20px;
+    flex-direction: column;
+width: 100%;
+    height: auto;
+    padding: 30px 0px;
 justify-content: center;
 align-items: center;
-gap: 362px;
+gap: 20px;
 border-radius: 10px;
 background: #FFF;
 box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.59);
+}
+.forfirstline{
+    display: flex;
+    gap: 168px;
+    width: 900px;
+    gap: 172px;
+
+
+}
+.forfirstline2{
+    display: flex;
+    gap: 130px;
+      width: 900px;
+      border-top: 1px solid #E8E8E8;
+
+
+}
+.projectName{
+    color: #052651;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+padding-top: 20px;
+}
+.padding2{
+    padding-left: 100px;
+}
+.padding3{
+    padding-left: 40px;
 }

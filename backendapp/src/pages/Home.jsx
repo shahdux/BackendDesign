@@ -28,7 +28,7 @@ const Home = () => {
                 statnumber="430"
                 />
             </div>
-            <div className='titlewsection'>
+            <div className='titlewsection2'>
             <div className='titlewsearch'>
                 <SectionTitle textsize="24px" 
                 Sectiontitle="Website Visits"/>
@@ -36,7 +36,7 @@ const Home = () => {
             </div>
 <img src={visitsdata} alt="website visits" />
             </div>
-               <div className='titlewsection'>
+               <div className='titlewsection2'>
             <div className='titlewsearch'>
                 <SectionTitle textsize="24px" 
                 Sectiontitle="Recent Projects"/>
@@ -45,6 +45,41 @@ const Home = () => {
 <div className='recentprojectsDiv'>
     <div className='forfirstline'>
        <TableHeader tableheadertext="Project"/>
+              <TableHeader tableheadertext="Category"/>
+       <TableHeader tableheadertext="Date Added"/>
+       <TableHeader tableheadertext="Status"/>
+
+    </div>
+     <div className='forfirstline2'>
+      <p className='projectName'>AR Escape Game</p>
+            <p className='projectName'>AR</p>
+              <p className='projectName padding2'>Oct 2025</p>
+            <p className='projectName padding3'>Published</p>
+
+
+    </div>
+       <div className='forfirstline2'>
+      <p className='projectName'>AR Escape Game</p>
+            <p className='projectName'>AR</p>
+        <p className='projectName padding2'>Oct 2025</p>
+            <p className='projectName padding3'>Published</p>
+
+
+    </div>
+      <div className='forfirstline2'>
+      <p className='projectName'>AR Escape Game</p>
+            <p className='projectName'>AR</p>
+            <p className='projectName padding2'>Oct 2025</p>
+            <p className='projectName padding3'>Published</p>
+
+
+    </div>  <div className='forfirstline2'>
+      <p className='projectName'>AR Escape Game</p>
+            <p className='projectName'>AR</p>
+            <p className='projectName padding2'>Oct 2025</p>
+            <p className='projectName padding3'>Published</p>
+
+
     </div>
 </div>
             </div>
