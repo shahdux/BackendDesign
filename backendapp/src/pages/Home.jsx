@@ -17,8 +17,18 @@ const Home = () => {
             <div className='forstatCards'>
                 <StatisticCard stattitle="Total Projects"
                 statnumber="20"
-
                 />
+                  <StatisticCard stattitle="Blog posts"
+                statnumber="2"
+                />  <StatisticCard stattitle="Total categories"
+                statnumber="5"
+                />  <StatisticCard stattitle="Project viewers"
+                statnumber="430"
+                />
+            </div>
+            <div className='titlewsearch'>
+                <SectionTitle textsize="24px" 
+                Sectiontitle="Website Visits"/>
             </div>
         </div>
             

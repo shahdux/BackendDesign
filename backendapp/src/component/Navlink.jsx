@@ -4,6 +4,9 @@ const Navlink = (props) => {
     return ( 
         <div className='iconwithnavlink'>
             <img src={props.linkicon} alt="navlink icon" />
+               {/* <div className="navlink-icon">
+                {props.linkicon}  
+            </div> */}
             <p className='navlink'>{props.linktitle}</p>
         </div>
      );

@@ -13,18 +13,20 @@ body{
     align-items: center;
     height: auto;
     padding: 80px 0px;
+        margin-left: 256px;
 }
 .titlewsearch{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    gap: 30px;
+    gap: 52px;
+    width: 73%;
 }
 .searchcont{
     border-radius: 88px;
 border: 1px solid var(--Stroke, #E8E8E8);
 background: var(--White, #FFF);
-width: 564px;
+width: 48%;
 height: 52px;
 padding-left: 20px;
 }
@@ -35,4 +37,9 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+.forstatCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
