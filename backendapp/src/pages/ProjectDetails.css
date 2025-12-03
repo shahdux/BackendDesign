@@ -81,3 +81,47 @@ padding-left: 20px;
 .imagemargintop{
     margin-top: 0px;
 }
+
+
+@media (max-width: 1400px) {
+    .forallinputs{
+    width: 100%;
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.buttoncont{
+    width: 90%;
+}
+ .inputforiumage{
+    width: 95%;
+   
+ }
+ .input-width{
+    width: 100%;
+ }
+ .rte1{
+        width: 80%;
+ }
+ .titlewithinput{
+    width: 90%;
+ }
+.input-width2{
+ width: 100%;}
+ 
+}
+
+@media (max-width: 600px) {
+    .inputforiumage{
+    width: 90%;
+   
+ }
+ .input-width2{
+ width: 425px;}
+ .foriconst{
+     width: 410px;
+ }
+ 
+}
