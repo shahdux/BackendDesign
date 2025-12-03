@@ -18,13 +18,19 @@ const Navbar = () => {
     return ( 
         <div className='navbar'>
             <Profile/>
+            <Link to ="/" className="no-underline">
             <Navlink linkicon={dashboardicon}
             linktitle="Dashboard"/>
+            </Link>
+            <Link to ="/categories" className="no-underline">
                <Navlink linkicon={categories}
             linktitle="Categories"/> 
+            </Link>
+             <Link to ="/projects" className="no-underline">
              <Link to ="/projects" className="no-underline">
             <Navlink linkicon={projects}
             linktitle="Projects"/>   
+             </Link>
              </Link>  
             <Navlink linkicon={Messages}
             linktitle="Messages"/>  

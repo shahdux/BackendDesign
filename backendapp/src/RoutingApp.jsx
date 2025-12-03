@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Projects from './pages/Projects';
+import Categories from './pages/Categories';
 
 
 
@@ -14,6 +15,8 @@ const RoutingApp = () => {
 <Route path='/' element={<Home />}/>
 <Route path='/login' element={<Login />}/>
 <Route path='/projects' element={<Projects />}/>
+<Route path='/categories' element={<Categories />}/>
+
 
 
 
