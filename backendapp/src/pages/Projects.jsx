@@ -7,6 +7,7 @@ import TableHeader from '../component/TableHeader';
 import StrokeButton from '../component/StrokeButton';
 import pen from "../assets/pen.svg";
 import removeicon from "../assets/delete.svg";
+import { Link } from 'react-router-dom';
 
 
 
@@ -44,8 +45,9 @@ const Projects = () => {
      <div className='forfirstline22 gap40'>
       <img src={p1} alt="Art Mentor App" className='paddingtop'/>
             <p className='projectName paddingleft130 pwidthauto'>UX/UI</p>
-
-            <p className='projectName padding22 pwidthauto pleft75i'>Art Mentor App</p>
+<Link to="/project1" className='no-underline'>
+            <p className='projectName padding22 pwidthauto pleft75i bluetext'>Art Mentor App</p>
+</Link>
               <p className='projectName projectpaddingledt20 pwidthauto'>An intuitive design app that helps users avoiding...</p>
               <div className='foractionbuttons '>
                     <img src={pen} alt="pen icon" />

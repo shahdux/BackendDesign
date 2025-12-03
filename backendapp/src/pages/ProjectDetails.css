@@ -1,0 +1,31 @@
+.project-image{
+    color: #052651;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.inputforiumage{
+    display: flex;
+height: 164px;
+padding: 10px 20px;
+align-items: center;
+width: 1020px;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.59);
+}
+.imagechnage{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.change{
+    color: #014AB6;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
