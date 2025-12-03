@@ -9,3 +9,17 @@
     padding-top: 20px;
    
 }
+@media (max-width: 1200px) {
+
+
+    .imgcont {
+        width: 120px;
+    }
+}
+@media (max-width: 700px) {
+
+
+    .imgcont {
+        width: 70px;
+    }
+}
