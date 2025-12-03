@@ -23,47 +23,31 @@ const Projects = () => {
             </div>
          <input className='searchcont width90' type="text" name="" id="" placeholder='Search'  />
            
-               <div className='titlewsection2 titlewsection3 '>
+               <div className='titlewsection2 titlewsection3'>
             <div className='titlewsearch width90'>
                 <SectionTitle textsize="24px" 
                 Sectiontitle="All Projects"/>
                 
             </div>
 <div className='recentprojectsDiv '>
-    <div className='forfirstline gap2 projectstabwidth'>
-       <TableHeader tableheadertext="Image"/>
-              <TableHeader tableheadertext="Category"/>
-       <TableHeader tableheadertext="Name"/>
-       <TableHeader tableheadertext="Description"/>
+    <div className='forfirstline gap2 projectstabwidth nomleft gap120'>
+       <TableHeader tableheadertext="Image" tableheaderwidth="auto"/> 
+              <TableHeader tableheadertext="Category" tableheaderwidth="auto"/>
+       <TableHeader tableheadertext="Name" tableheaderwidth="auto"/>
+       <TableHeader tableheadertext="Description" tableheaderwidth="auto"/>
               {/* <TableHeader tableheadertext="Actions"/> */}
               <p className='
-              actionspadding'>Actions</p>
+              actionspaddingprojects actionsmledt'>Actions</p>
 
 
     </div>
-     <div className='forfirstline2 gap40'>
+     <div className='forfirstline22 gap40'>
       <img src={p1} alt="Art Mentor App" className='paddingtop'/>
-            <p className='projectName paddingleft130'>UX/UI</p>
+            <p className='projectName paddingleft130 pwidthauto'>UX/UI</p>
 
-            <p className='projectName padding2'>Art Mentor App</p>
-              <p className='projectName '>An intuitive design app that helps users avoiding...</p>
-              <div className='foractionbuttons'>
-                    <img src={pen} alt="pen icon" />
-                    <img src={removeicon} alt="delete icon" />
-
-              </div>
-
-           
-
-
-    </div>
-     <div className='forfirstline2 gap40'>
-      <img src={p1} alt="Art Mentor App" className='paddingtop'/>
-            <p className='projectName paddingleft130'>UX/UI</p>
-
-            <p className='projectName padding2'>Art Mentor App</p>
-              <p className='projectName '>An intuitive design app that helps users avoiding...</p>
-              <div className='foractionbuttons'>
+            <p className='projectName padding22 pwidthauto pleft75i'>Art Mentor App</p>
+              <p className='projectName projectpaddingledt20 pwidthauto'>An intuitive design app that helps users avoiding...</p>
+              <div className='foractionbuttons '>
                     <img src={pen} alt="pen icon" />
                     <img src={removeicon} alt="delete icon" />
 
@@ -73,13 +57,13 @@ const Projects = () => {
 
 
     </div>
-     <div className='forfirstline2 gap40'>
+     <div className='forfirstline22 gap40'>
       <img src={p1} alt="Art Mentor App" className='paddingtop'/>
-            <p className='projectName paddingleft130'>UX/UI</p>
+            <p className='projectName paddingleft130 pwidthauto'>UX/UI</p>
 
-            <p className='projectName padding2'>Art Mentor App</p>
-              <p className='projectName '>An intuitive design app that helps users avoiding...</p>
-              <div className='foractionbuttons'>
+            <p className='projectName padding22 pwidthauto pleft75i'>Art Mentor App</p>
+              <p className='projectName projectpaddingledt20 pwidthauto'>An intuitive design app that helps users avoiding...</p>
+              <div className='foractionbuttons '>
                     <img src={pen} alt="pen icon" />
                     <img src={removeicon} alt="delete icon" />
 
@@ -89,13 +73,13 @@ const Projects = () => {
 
 
     </div>
-      <div className='forfirstline2 gap40'>
+    <div className='forfirstline22 gap40'>
       <img src={p1} alt="Art Mentor App" className='paddingtop'/>
-            <p className='projectName paddingleft130'>UX/UI</p>
+            <p className='projectName paddingleft130 pwidthauto'>UX/UI</p>
 
-            <p className='projectName padding2'>Art Mentor App</p>
-              <p className='projectName '>An intuitive design app that helps users avoiding...</p>
-              <div className='foractionbuttons'>
+            <p className='projectName padding22 pwidthauto pleft75i'>Art Mentor App</p>
+              <p className='projectName projectpaddingledt20 pwidthauto'>An intuitive design app that helps users avoiding...</p>
+              <div className='foractionbuttons '>
                     <img src={pen} alt="pen icon" />
                     <img src={removeicon} alt="delete icon" />
 
@@ -104,13 +88,14 @@ const Projects = () => {
            
 
 
-    </div>  <div className='forfirstline2 gap40'>
+    </div>
+  <div className='forfirstline22 gap40'>
       <img src={p1} alt="Art Mentor App" className='paddingtop'/>
-            <p className='projectName paddingleft130'>UX/UI</p>
+            <p className='projectName paddingleft130 pwidthauto'>UX/UI</p>
 
-            <p className='projectName padding2'>Art Mentor App</p>
-              <p className='projectName '>An intuitive design app that helps users avoiding...</p>
-              <div className='foractionbuttons'>
+            <p className='projectName padding22 pwidthauto pleft75i'>Art Mentor App</p>
+              <p className='projectName projectpaddingledt20 pwidthauto'>An intuitive design app that helps users avoiding...</p>
+              <div className='foractionbuttons '>
                     <img src={pen} alt="pen icon" />
                     <img src={removeicon} alt="delete icon" />
 
@@ -119,13 +104,30 @@ const Projects = () => {
            
 
 
-    </div>  <div className='forfirstline2 gap40'>
+    </div>
+    <div className='forfirstline22 gap40'>
       <img src={p1} alt="Art Mentor App" className='paddingtop'/>
-            <p className='projectName paddingleft130'>UX/UI</p>
+            <p className='projectName paddingleft130 pwidthauto'>UX/UI</p>
 
-            <p className='projectName padding2'>Art Mentor App</p>
-              <p className='projectName '>An intuitive design app that helps users avoiding...</p>
-              <div className='foractionbuttons'>
+            <p className='projectName padding22 pwidthauto pleft75i'>Art Mentor App</p>
+              <p className='projectName projectpaddingledt20 pwidthauto'>An intuitive design app that helps users avoiding...</p>
+              <div className='foractionbuttons '>
+                    <img src={pen} alt="pen icon" />
+                    <img src={removeicon} alt="delete icon" />
+
+              </div>
+
+           
+
+
+    </div>
+    <div className='forfirstline22 gap40'>
+      <img src={p1} alt="Art Mentor App" className='paddingtop'/>
+            <p className='projectName paddingleft130 pwidthauto'>UX/UI</p>
+
+            <p className='projectName padding22 pwidthauto pleft75i'>Art Mentor App</p>
+              <p className='projectName projectpaddingledt20 pwidthauto'>An intuitive design app that helps users avoiding...</p>
+              <div className='foractionbuttons '>
                     <img src={pen} alt="pen icon" />
                     <img src={removeicon} alt="delete icon" />
 

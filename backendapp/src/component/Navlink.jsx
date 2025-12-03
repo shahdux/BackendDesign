@@ -7,7 +7,7 @@ const Navlink = (props) => {
                {/* <div className="navlink-icon">
                 {props.linkicon}  
             </div> */}
-            <p className='navlink'>{props.linktitle}</p>
+            <p className='navlink' style={{color: props.navcolor}}>{props.linktitle}</p>
         </div>
      );
 }

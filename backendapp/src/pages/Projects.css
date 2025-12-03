@@ -25,6 +25,15 @@
 }
 .projectstabwidth{
     width: 1190px;
+     display: flex;
+    gap: 168px;
+        align-items: center;
+
+    /* width: 900px; */
+    gap: 172px;
+ 
+     
+
 }
 .actionspadding{
     color: #052651;
@@ -36,6 +45,16 @@
     margin: 0;
     margin-left: 280px;
 }
+.actionspaddingprojects{
+    color: #052651;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+  
+}
 .paddingtop{
  padding-top: 20px;
 }
@@ -45,4 +64,54 @@
     padding-left: 110px;}
 .width90{
     width: 90%;
+}
+.forfirstline22{
+    display: flex;
+    gap: 130px;
+     gap: 20px;
+        align-items: center;
+
+ 
+      border-top: 1px solid #E8E8E8;
+       gap: 40px;
+ 
+     width: 1190px;
+     
+
+
+}
+.padding22{
+    padding-left: 100px;
+}
+.padding33{
+    padding-left: 40px;
+}
+.nomleft{
+    margin-left: 0;
+}
+.paddingledt{
+    padding-left: 200px;
+}
+.paddingledt{
+   width: auto;
+   padding-left: 180px;
+}
+.namepadding{
+    padding-left: 130px;
+}
+.gap120{
+   
+    gap: 120px;
+}
+.projectpaddingledt20{
+        padding-left: 40px;
+}
+.pwidthauto{
+    width: auto;
+}
+.actionsmledt{
+    margin-left: 290px;
+}
+.pleft75i{
+    padding-left: 73px;
 }
