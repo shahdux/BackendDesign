@@ -13,3 +13,13 @@ justify-content: center;
 .formargintop{
     margin-top: 230px;
 }
+@media (max-width: 1200px) {
+.navbar{
+ display: none;
+}
+}
+@media (max-width: 700px) {
+.navbar{
+ display: none;
+}
+}

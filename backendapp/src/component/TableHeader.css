@@ -9,3 +9,24 @@ margin: 0;
 width: 250px;
 
 }
+@media (max-width: 1500px) {
+    .tableheader {
+   
+    width: 160px;
+}
+}
+@media (max-width: 1200px) {
+    
+.tableheader {
+   
+    width: 160px;
+}
+}
+@media (max-width: 600px) {
+    
+.tableheader {
+   
+    width: 95px;
+    font-size: 18px;
+}
+}

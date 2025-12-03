@@ -106,3 +106,85 @@ margin: 0;
 padding-top: 20px;
 width: 250px;
 }
+
+@media (max-width: 1400px) {
+.mainBar{
+    margin-left: 18%;
+}
+.vists{
+width: 70%;
+}   
+    
+}
+
+@media (max-width: 1500px) {
+    .projectName {
+   
+    width: 160px;
+}
+
+}
+@media (max-width: 1200px) {
+    .mainBar{
+    margin-left: 0%;
+
+}
+.projectName {
+   
+    width: 160px;
+}
+.titlewsection2{
+    width: 90%;
+}
+.forstatCards{
+    width: 90%;
+}
+.titlewsearch{
+    width: 90%;
+}
+.forfirstline{
+    margin-left: 5%;
+}
+.forfirstline2{
+    margin-left: 5%;
+}
+}
+
+@media (max-width: 600px) {
+    .mainBar{
+    margin-left: 0%;
+
+}
+.projectName {
+   
+    width: 95px;
+    font-size: 16px;
+}
+.titlewsection2{
+    width: 90%;
+}
+.forstatCards{
+    width: 90%;
+}
+.titlewsearch{
+    width: 90%;
+}
+.forfirstline{
+   gap: 10px;
+}
+.forfirstline2{
+  gap: 10px;
+}
+.searchcont{
+    width: 100%;
+}
+.forstatCards{
+    width: 100%;
+            flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.titlewsearch{
+   gap: 24px;
+}
+}

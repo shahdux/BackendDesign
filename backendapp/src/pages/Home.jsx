@@ -34,7 +34,7 @@ const Home = () => {
                 Sectiontitle="Website Visits"/>
                 
             </div>
-<img src={visitsdata} alt="website visits" />
+<img src={visitsdata} alt="website visits" className='visits'/>
             </div>
                <div className='titlewsection2'>
             <div className='titlewsearch'>

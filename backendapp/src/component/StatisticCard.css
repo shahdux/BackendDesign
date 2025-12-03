@@ -31,3 +31,9 @@ font-weight: 700;
 line-height: normal;
 margin: 0;
 }
+
+@media (max-width: 600px) {
+    .statCard{
+        width: 90%;
+    }
+}
