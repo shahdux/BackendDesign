@@ -127,8 +127,10 @@ width: 70%;
 @media (max-width: 1200px) {
     .mainBar{
     margin-left: 0%;
+    padding:80px 0px ;
 
 }
+
 .projectName {
    
     width: 160px;
