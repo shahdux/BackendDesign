@@ -5,6 +5,8 @@ import SectionTitle from '../component/SectionTitle';
 import TableHeader from '../component/TableHeader';
 import StrokeButton from '../component/StrokeButton';
 import catimg1 from "../assets/catimg.svg";
+import pen from "../assets/pen.svg";
+import removeicon from "../assets/delete.svg";
 
 
 
@@ -33,33 +35,96 @@ const Categories = () => {
 
     </div>
      <div className='forfirstline2'>
+        <div className='imgcont'>
+
         <img src={catimg1} alt="mockup of a TVOS design" className='paddingtop'/>
-            <p className='projectName'>AR</p>
-              <p className='projectName padding2'>Oct 2025</p>
-            <p className='projectName padding3'>Published</p>
+        </div>
+            <p className='projectName'>UX/UI</p>
+              <p className='projectName padding2'>Crafting intuitive use...</p>
+              <div className='foractionbuttons2 imgcont'>
+
+                                <img src={pen} alt="pen icon" />
+                                <img src={removeicon} alt="delete icon" />
+            
+                          </div>
 
 
     </div>
-       <div className='forfirstline2'>
-      <p className='projectName'>AR Escape Game</p>
-            <p className='projectName'>AR</p>
-        <p className='projectName padding2'>Oct 2025</p>
-            <p className='projectName padding3'>Published</p>
-
-
-    </div>
+      
       <div className='forfirstline2'>
-      <p className='projectName'>AR Escape Game</p>
-            <p className='projectName'>AR</p>
-            <p className='projectName padding2'>Oct 2025</p>
-            <p className='projectName padding3'>Published</p>
+        <div className='imgcont'>
+
+        <img src={catimg1} alt="mockup of a TVOS design" className='paddingtop'/>
+        </div>
+            <p className='projectName'>UX/UI</p>
+              <p className='projectName padding2'>Crafting intuitive use...</p>
+              <div className='foractionbuttons2 imgcont'>
+
+                                <img src={pen} alt="pen icon" />
+                                <img src={removeicon} alt="delete icon" />
+            
+                          </div>
 
 
-    </div>  <div className='forfirstline2'>
-      <p className='projectName'>AR Escape Game</p>
-            <p className='projectName'>AR</p>
-            <p className='projectName padding2'>Oct 2025</p>
-            <p className='projectName padding3'>Published</p>
+    </div>
+     <div className='forfirstline2'>
+        <div className='imgcont'>
+
+        <img src={catimg1} alt="mockup of a TVOS design" className='paddingtop'/>
+        </div>
+            <p className='projectName'>UX/UI</p>
+              <p className='projectName padding2'>Crafting intuitive use...</p>
+              <div className='foractionbuttons2 imgcont'>
+
+                                <img src={pen} alt="pen icon" />
+                                <img src={removeicon} alt="delete icon" />
+            
+                          </div>
+
+
+    </div> <div className='forfirstline2'>
+        <div className='imgcont'>
+
+        <img src={catimg1} alt="mockup of a TVOS design" className='paddingtop'/>
+        </div>
+            <p className='projectName'>UX/UI</p>
+              <p className='projectName padding2'>Crafting intuitive use...</p>
+              <div className='foractionbuttons2 imgcont'>
+
+                                <img src={pen} alt="pen icon" />
+                                <img src={removeicon} alt="delete icon" />
+            
+                          </div>
+
+
+    </div> <div className='forfirstline2'>
+        <div className='imgcont'>
+
+        <img src={catimg1} alt="mockup of a TVOS design" className='paddingtop'/>
+        </div>
+            <p className='projectName'>UX/UI</p>
+              <p className='projectName padding2'>Crafting intuitive use...</p>
+              <div className='foractionbuttons2 imgcont'>
+
+                                <img src={pen} alt="pen icon" />
+                                <img src={removeicon} alt="delete icon" />
+            
+                          </div>
+
+
+    </div> <div className='forfirstline2'>
+        <div className='imgcont'>
+
+        <img src={catimg1} alt="mockup of a TVOS design" className='paddingtop'/>
+        </div>
+            <p className='projectName'>UX/UI</p>
+              <p className='projectName padding2'>Crafting intuitive use...</p>
+              <div className='foractionbuttons2 imgcont'>
+
+                                <img src={pen} alt="pen icon" />
+                                <img src={removeicon} alt="delete icon" />
+            
+                          </div>
 
 
     </div>

@@ -1,0 +1,11 @@
+.imgcont{
+    width: 250px;
+}
+.foractionbuttons2{
+     display: flex;
+    gap: 20px;
+   
+    align-items: center;
+    padding-top: 20px;
+   
+}
