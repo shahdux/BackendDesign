@@ -18,7 +18,7 @@ body{
 }
 .titlewsearch{
     display: flex;
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
     gap: 52px;
     width: 73%;

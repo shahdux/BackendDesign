@@ -1,0 +1,48 @@
+.sc2{
+    width: 73%;
+}
+.gap2{
+    gap: 120px;
+}
+.gap40{
+    gap: 40px;
+    width: auto;
+     width: 1190px;
+}
+.titlewsection3{
+    width: 90%;
+}
+.foractionbuttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-left:40px ;
+}
+.titlewidth{
+    width: 251px;
+}
+.projectstabwidth{
+    width: 1190px;
+}
+.actionspadding{
+    color: #052651;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    margin-left: 280px;
+}
+.paddingtop{
+ padding-top: 20px;
+}
+.paddingleft130{
+    padding-left: 130px;}
+    .paddingleft110{
+    padding-left: 110px;}
+.width90{
+    width: 90%;
+}

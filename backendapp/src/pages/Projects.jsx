@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import "./Projects.css";
 import Navbar from '../component/Navbar';
 import SectionTitle from '../component/SectionTitle';
-import StatisticCard from '../component/StatisticCard';
-import visitsdata from "../assets/data.svg"
+import p1 from "../assets/img1.svg"
 import TableHeader from '../component/TableHeader';
 import StrokeButton from '../component/StrokeButton';
+import pen from "../assets/pen.svg";
+import removeicon from "../assets/delete.svg";
+
+
 
 const Projects = () => {
     return ( 
@@ -18,71 +21,122 @@ const Projects = () => {
             <StrokeButton strokebtext="Add project"/>
 
             </div>
-            <div className='forstatCards'>
-                <StatisticCard stattitle="Total Projects"
-                statnumber="20"
-                />
-                  <StatisticCard stattitle="Blog posts"
-                statnumber="2"
-                />  <StatisticCard stattitle="Total categories"
-                statnumber="5"
-                />  <StatisticCard stattitle="Project viewers"
-                statnumber="430"
-                />
-            </div>
-            <div className='titlewsection2'>
-            <div className='titlewsearch'>
+         <input className='searchcont width90' type="text" name="" id="" placeholder='Search'  />
+           
+               <div className='titlewsection2 titlewsection3 '>
+            <div className='titlewsearch width90'>
                 <SectionTitle textsize="24px" 
-                Sectiontitle="Website Visits"/>
+                Sectiontitle="All Projects"/>
                 
             </div>
-<img src={visitsdata} alt="website visits" />
-            </div>
-               <div className='titlewsection2'>
-            <div className='titlewsearch'>
-                <SectionTitle textsize="24px" 
-                Sectiontitle="Recent Projects"/>
-                
-            </div>
-<div className='recentprojectsDiv'>
-    <div className='forfirstline'>
-       <TableHeader tableheadertext="Project"/>
+<div className='recentprojectsDiv '>
+    <div className='forfirstline gap2 projectstabwidth'>
+       <TableHeader tableheadertext="Image"/>
               <TableHeader tableheadertext="Category"/>
-       <TableHeader tableheadertext="Date Added"/>
-       <TableHeader tableheadertext="Status"/>
-
-    </div>
-     <div className='forfirstline2'>
-      <p className='projectName'>AR Escape Game</p>
-            <p className='projectName'>AR</p>
-              <p className='projectName padding2'>Oct 2025</p>
-            <p className='projectName padding3'>Published</p>
+       <TableHeader tableheadertext="Name"/>
+       <TableHeader tableheadertext="Description"/>
+              {/* <TableHeader tableheadertext="Actions"/> */}
+              <p className='
+              actionspadding'>Actions</p>
 
 
     </div>
-       <div className='forfirstline2'>
-      <p className='projectName'>AR Escape Game</p>
-            <p className='projectName'>AR</p>
-        <p className='projectName padding2'>Oct 2025</p>
-            <p className='projectName padding3'>Published</p>
+     <div className='forfirstline2 gap40'>
+      <img src={p1} alt="Art Mentor App" className='paddingtop'/>
+            <p className='projectName paddingleft130'>UX/UI</p>
+
+            <p className='projectName padding2'>Art Mentor App</p>
+              <p className='projectName '>An intuitive design app that helps users avoiding...</p>
+              <div className='foractionbuttons'>
+                    <img src={pen} alt="pen icon" />
+                    <img src={removeicon} alt="delete icon" />
+
+              </div>
+
+           
 
 
     </div>
-      <div className='forfirstline2'>
-      <p className='projectName'>AR Escape Game</p>
-            <p className='projectName'>AR</p>
-            <p className='projectName padding2'>Oct 2025</p>
-            <p className='projectName padding3'>Published</p>
+     <div className='forfirstline2 gap40'>
+      <img src={p1} alt="Art Mentor App" className='paddingtop'/>
+            <p className='projectName paddingleft130'>UX/UI</p>
 
+            <p className='projectName padding2'>Art Mentor App</p>
+              <p className='projectName '>An intuitive design app that helps users avoiding...</p>
+              <div className='foractionbuttons'>
+                    <img src={pen} alt="pen icon" />
+                    <img src={removeicon} alt="delete icon" />
 
-    </div>  <div className='forfirstline2'>
-      <p className='projectName'>AR Escape Game</p>
-            <p className='projectName'>AR</p>
-            <p className='projectName padding2'>Oct 2025</p>
-            <p className='projectName padding3'>Published</p>
+              </div>
+
+           
 
 
     </div>
+     <div className='forfirstline2 gap40'>
+      <img src={p1} alt="Art Mentor App" className='paddingtop'/>
+            <p className='projectName paddingleft130'>UX/UI</p>
+
+            <p className='projectName padding2'>Art Mentor App</p>
+              <p className='projectName '>An intuitive design app that helps users avoiding...</p>
+              <div className='foractionbuttons'>
+                    <img src={pen} alt="pen icon" />
+                    <img src={removeicon} alt="delete icon" />
+
+              </div>
+
+           
+
+
+    </div>
+      <div className='forfirstline2 gap40'>
+      <img src={p1} alt="Art Mentor App" className='paddingtop'/>
+            <p className='projectName paddingleft130'>UX/UI</p>
+
+            <p className='projectName padding2'>Art Mentor App</p>
+              <p className='projectName '>An intuitive design app that helps users avoiding...</p>
+              <div className='foractionbuttons'>
+                    <img src={pen} alt="pen icon" />
+                    <img src={removeicon} alt="delete icon" />
+
+              </div>
+
+           
+
+
+    </div>  <div className='forfirstline2 gap40'>
+      <img src={p1} alt="Art Mentor App" className='paddingtop'/>
+            <p className='projectName paddingleft130'>UX/UI</p>
+
+            <p className='projectName padding2'>Art Mentor App</p>
+              <p className='projectName '>An intuitive design app that helps users avoiding...</p>
+              <div className='foractionbuttons'>
+                    <img src={pen} alt="pen icon" />
+                    <img src={removeicon} alt="delete icon" />
+
+              </div>
+
+           
+
+
+    </div>  <div className='forfirstline2 gap40'>
+      <img src={p1} alt="Art Mentor App" className='paddingtop'/>
+            <p className='projectName paddingleft130'>UX/UI</p>
+
+            <p className='projectName padding2'>Art Mentor App</p>
+              <p className='projectName '>An intuitive design app that helps users avoiding...</p>
+              <div className='foractionbuttons'>
+                    <img src={pen} alt="pen icon" />
+                    <img src={removeicon} alt="delete icon" />
+
+              </div>
+
+           
+
+
+    </div>
+    
+      
 </div>
             </div>
         </div>
