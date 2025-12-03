@@ -3,8 +3,8 @@ import "./Button.css";
 const Button = (props) => {
     return ( 
         <>
-        <div className='loginButton'>
-            <p className='logintext'>{props.buttontext}</p>
+        <div className='loginButton' style={{width: props.buttonwidth}}>
+            <p className='logintext' >{props.buttontext}</p>
         </div>
         </>
      );

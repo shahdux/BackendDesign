@@ -29,3 +29,52 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+.input-width{
+ width: 100%;
+ display: flex;
+height: 52px;
+
+align-items: center;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.59);
+border: none;
+
+
+}
+.input-width2{
+ width: 100%;
+ display: flex;
+height: 168px;
+
+align-items: center;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.59);
+border: none;
+border-radius: 0 0 10px 10px;
+
+
+
+}
+.foriconst{
+    display: flex;
+    gap: 12px;
+    background: white;
+    border-radius: 20px 20px 0 0;
+border-bottom: 1px solid #BABABA;
+background: #FFF;
+width: 99%;
+height: 49px;
+align-items: center;
+padding-left: 20px;
+
+
+}
+.buttoncont{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
