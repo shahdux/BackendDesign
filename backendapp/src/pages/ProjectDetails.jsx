@@ -40,13 +40,13 @@ const ProjectDetails = () => {
            
                <div className='forallinputs'>
                 <div className='titlewithinput'>
-                    <p className='project-image'>Image</p>
+                    <p className='project-image imagemargintop'>Image</p>
                     <div className='imagewithbutton'>
                     <div className='inputforiumage'>
                         <img src={artmentorapp} alt="art mentor ux ui app mockup" />
                     </div>
 <div className='imagechnage'>
-    <p className='change'>Change Image</p>
+    <p className='change '>Change Image</p>
     <img src={upload} alt="upload icon"/>
 </div>
                     </div>

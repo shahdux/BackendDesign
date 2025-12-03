@@ -136,3 +136,29 @@ margin: 0;
 .no-underline{
 text-decoration: none;
 }
+
+@media (max-width: 700px) {
+.loginform{
+    background-image: none;
+}
+.logininput{
+    width: 440px;
+}
+.passwordSection {
+   
+    gap: 110px;
+}
+.loginButton{
+ width: 440px;
+}
+.illustrationstyle{
+    display: none;
+}
+.whitecont{
+    background: none;
+}
+.loginsub{
+    font-size: 18px;
+}
+
+}

@@ -4,10 +4,17 @@ import loginimg from "../assets/loginimg2.svg";
 import logo from "../assets/logo.svg";
 import Button from '../component/Button';
 import { Link } from 'react-router-dom';
-
+// import { Helmet } from "react-helmet"; 
 const Login = () => {
     return ( 
+
         <>
+          {/* <Helmet>
+        <title>Login Page</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet> */}
+        
+        
         <div className='loginform'>
             <div className='whitecont'>
                 <div className='loginpart1'>
@@ -39,7 +46,7 @@ const Login = () => {
 
                 <p className='signup'>Dont have an account? <span className='signup2'> Sign Up</span></p>
                 </div>
-                <img src={loginimg} alt="illustration"/>
+                <img src={loginimg} alt="illustration" className='illustrationstyle'/>
             </div>
         </div>
         
