@@ -6,6 +6,7 @@ import StrokeButton from '../component/StrokeButton';
 import BlogCard from '../component/BlogCard';
 import blogimg1 from '../assets/blogimg1.svg';
 import blogimg2 from '../assets/blogimg2.svg';
+import { Link } from 'react-router-dom';
 
 
 
@@ -30,11 +31,13 @@ const Blogs = () => {
                 
             </div>
             <div className='forblogsdiv'>
+                <Link to="/blogdetails" className='no-underline'>
                 <BlogCard
                 blogimg={blogimg1}
                  blogtitle="How I helped mothers manage their cooking ingredients"
                 blogdes="Crafting intuitive, user-centered interfaces that balance form and function across web and mobile platforms."
                 />
+                </Link>
                  <BlogCard
                 blogimg={blogimg2}
                  blogtitle="Top Qualities of a Professional UI Designer in Egypt"
