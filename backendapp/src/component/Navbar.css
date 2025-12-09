@@ -12,8 +12,36 @@ justify-content: center;
 }
 .formargintop{
     margin-top: 230px;
+    margin-top: auto;
+}
+.dropdown-container {
+  cursor: pointer;
 }
 
+.dropdown-menu {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dropdown-menu p {
+  margin: 0;
+  padding: 5px 0;
+  cursor: pointer;
+  color: #6B7280;
+font-family: poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+transition: 0.5s ease;
+}
+.dropdown-menu p:hover{
+  color: #014AB6;
+
+
+}
 
 @media (max-width: 1200px) {
 

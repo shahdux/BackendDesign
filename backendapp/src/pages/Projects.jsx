@@ -17,6 +17,7 @@ const Projects = () => {
          <div className='nabarwithmain'>
         <Navbar/>
         <div className='mainBar'>
+           
             <div className='titlewsearch width90'>
             <SectionTitle Sectiontitle="Project Management"/>
             <StrokeButton strokebtext="Add project"/>
