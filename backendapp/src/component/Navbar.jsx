@@ -89,7 +89,11 @@ const Navbar = () => {
         </Link>
 
         <Navlink linkicon={Messages} linktitle="Messages" />
+
+                <Link to="/settings" className="no-underline" onClick={() => setOpen(false)}>
+
         <Navlink linkicon={Settings} linktitle="Settings" />
+        </Link>
         <Navlink linkicon={Pages} linktitle="Pages" />
 
         <div className='formargintop'></div>

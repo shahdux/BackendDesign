@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Projects from './pages/Projects';
 import Categories from './pages/Categories';
 import ProjectDetails from './pages/ProjectDetails';
+import Settings from './pages/Settings';
 
 
 
@@ -18,6 +19,8 @@ const RoutingApp = () => {
 <Route path='/projects' element={<Projects />}/>
 <Route path='/categories' element={<Categories />}/>
 <Route path='/project1' element={<ProjectDetails />}/>
+<Route path='/settings' element={<Settings />}/>
+
 
 
 
