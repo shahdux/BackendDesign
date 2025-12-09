@@ -6,6 +6,7 @@ import Projects from './pages/Projects';
 import Categories from './pages/Categories';
 import ProjectDetails from './pages/ProjectDetails';
 import Settings from './pages/Settings';
+import Blogs from './pages/Blogs';
 
 
 
@@ -20,6 +21,8 @@ const RoutingApp = () => {
 <Route path='/categories' element={<Categories />}/>
 <Route path='/project1' element={<ProjectDetails />}/>
 <Route path='/settings' element={<Settings />}/>
+<Route path='/blogs' element={<Blogs />}/>
+
 
 
 
