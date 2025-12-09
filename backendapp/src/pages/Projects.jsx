@@ -45,12 +45,14 @@ const Projects = () => {
      <div className='forfirstline22 gap40'>
       <img src={p1} alt="Art Mentor App" className='paddingtop'/>
             <p className='projectName paddingleft130 pwidthauto'>UX/UI</p>
-<Link to="/project1" className='no-underline'>
-            <p className='projectName padding22 pwidthauto pleft75i bluetext'>Art Mentor App</p>
-</Link>
+            <p className='projectName padding22 pwidthauto pleft75i'>Art Mentor App</p>
+
               <p className='projectName projectpaddingledt20 pwidthauto'>An intuitive design app that helps users avoiding...</p>
               <div className='foractionbuttons '>
-                    <img src={pen} alt="pen icon" />
+                  <Link to="/project1" className='no-underline'>
+
+                    <img src={pen} alt="pen icon" className='penclass' />
+                    </Link>
                     <img src={removeicon} alt="delete icon" />
 
               </div>
@@ -66,7 +68,7 @@ const Projects = () => {
             <p className='projectName padding22 pwidthauto pleft75i'>Art Mentor App</p>
               <p className='projectName projectpaddingledt20 pwidthauto'>An intuitive design app that helps users avoiding...</p>
               <div className='foractionbuttons '>
-                    <img src={pen} alt="pen icon" />
+                    <img src={pen} alt="pen icon" className='penclass'/>
                     <img src={removeicon} alt="delete icon" />
 
               </div>
@@ -82,7 +84,7 @@ const Projects = () => {
             <p className='projectName padding22 pwidthauto pleft75i'>Art Mentor App</p>
               <p className='projectName projectpaddingledt20 pwidthauto'>An intuitive design app that helps users avoiding...</p>
               <div className='foractionbuttons '>
-                    <img src={pen} alt="pen icon" />
+                    <img src={pen} alt="pen icon" className='penclass' />
                     <img src={removeicon} alt="delete icon" />
 
               </div>
@@ -98,7 +100,7 @@ const Projects = () => {
             <p className='projectName padding22 pwidthauto pleft75i'>Art Mentor App</p>
               <p className='projectName projectpaddingledt20 pwidthauto'>An intuitive design app that helps users avoiding...</p>
               <div className='foractionbuttons '>
-                    <img src={pen} alt="pen icon" />
+                    <img src={pen} alt="pen icon" className='penclass'/>
                     <img src={removeicon} alt="delete icon" />
 
               </div>
@@ -114,7 +116,7 @@ const Projects = () => {
             <p className='projectName padding22 pwidthauto pleft75i'>Art Mentor App</p>
               <p className='projectName projectpaddingledt20 pwidthauto'>An intuitive design app that helps users avoiding...</p>
               <div className='foractionbuttons '>
-                    <img src={pen} alt="pen icon" />
+                    <img src={pen} alt="pen icon" className='penclass'/>
                     <img src={removeicon} alt="delete icon" />
 
               </div>
@@ -130,7 +132,7 @@ const Projects = () => {
             <p className='projectName padding22 pwidthauto pleft75i'>Art Mentor App</p>
               <p className='projectName projectpaddingledt20 pwidthauto'>An intuitive design app that helps users avoiding...</p>
               <div className='foractionbuttons '>
-                    <img src={pen} alt="pen icon" />
+                    <img src={pen} alt="pen icon" className='penclass' />
                     <img src={removeicon} alt="delete icon" />
 
               </div>

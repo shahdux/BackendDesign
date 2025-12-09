@@ -118,6 +118,12 @@
 .bluetext{
     color: #2D39B8;
 }
+.penclass{
+    transition: 0.5s ease;
+}
+.penclass:hover{
+content: url(../assets/penhover.svg);
+}
 
 
 @media (max-width: 1400px) {
