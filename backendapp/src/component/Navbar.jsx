@@ -96,8 +96,10 @@ const Navbar = () => {
         <Link to="/projects" className="no-underline" onClick={() => setOpen(false)}>
           <Navlink linkicon={projects} linktitle="Projects" />
         </Link>
+        <Link to="/messages" className="no-underline" onClick={() => setOpen(false)}>
 
         <Navlink linkicon={Messages} linktitle="Messages" />
+        </Link>
 
         <Link to="/settings" className="no-underline" onClick={() => setOpen(false)}>
           <Navlink linkicon={Settings} linktitle="Settings" />
