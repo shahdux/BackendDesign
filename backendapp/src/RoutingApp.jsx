@@ -8,6 +8,7 @@ import ProjectDetails from './pages/ProjectDetails';
 import Settings from './pages/Settings';
 import Blogs from './pages/Blogs';
 import Blogdetails from './pages/BlogDetails';
+import EditHome from './pages/EditHome';
 
 
 
@@ -24,6 +25,8 @@ const RoutingApp = () => {
 <Route path='/settings' element={<Settings />}/>
 <Route path='/blogs' element={<Blogs />}/>
 <Route path='/blogdetails' element={<Blogdetails />}/>
+<Route path='/EditHome' element={<EditHome />}/>
+
 
 
 
