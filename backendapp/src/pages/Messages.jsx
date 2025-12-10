@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import "./Messages.css";
 import Navbar from '../component/Navbar';
 import SectionTitle from '../component/SectionTitle';
-import p1 from "../assets/img1.svg"
 import TableHeader from '../component/TableHeader';
-import StrokeButton from '../component/StrokeButton';
-import pen from "../assets/pen.svg";
+import view from "../assets/view.svg";
+
 import removeicon from "../assets/delete.svg";
 import { Link } from 'react-router-dom';
 
@@ -48,7 +47,7 @@ const Messages = () => {
             <p className='projectName padding3'>Nov 22, 2025</p>
        <div className='foractionbuttons2 projectName padding3'>
 
-                    <img src={pen} alt="pen icon" className='penclass' />
+                    <img src={view} alt="view icon" className='viewclass' />
                     <img src={removeicon} alt="delete icon" />
 
               </div>
@@ -62,7 +61,7 @@ const Messages = () => {
             <p className='projectName padding3'>Nov 22, 2025</p>
        <div className='foractionbuttons2 projectName padding3'>
 
-                    <img src={pen} alt="pen icon" className='penclass' />
+                    <img src={view} alt="view icon" className='viewclass' />
                     <img src={removeicon} alt="delete icon" />
 
               </div>
@@ -75,7 +74,7 @@ const Messages = () => {
             <p className='projectName padding3'>Nov 22, 2025</p>
        <div className='foractionbuttons2 projectName padding3'>
 
-                    <img src={pen} alt="pen icon" className='penclass' />
+                    <img src={view} alt="view icon" className='viewclass' />
                     <img src={removeicon} alt="delete icon" />
 
               </div>
@@ -88,7 +87,7 @@ const Messages = () => {
             <p className='projectName padding3'>Nov 22, 2025</p>
        <div className='foractionbuttons2 projectName padding3'>
 
-                    <img src={pen} alt="pen icon" className='penclass' />
+                    <img src={view} alt="view icon" className='viewclass' />
                     <img src={removeicon} alt="delete icon" />
 
               </div>
@@ -102,7 +101,7 @@ const Messages = () => {
             <p className='projectName padding3'>Nov 22, 2025</p>
        <div className='foractionbuttons2 projectName padding3'>
 
-                    <img src={pen} alt="pen icon" className='penclass' />
+                    <img src={view} alt="view icon" className='viewclass' />
                     <img src={removeicon} alt="delete icon" />
 
               </div>
@@ -115,7 +114,7 @@ const Messages = () => {
             <p className='projectName padding3'>Nov 22, 2025</p>
        <div className='foractionbuttons2 projectName padding3'>
 
-                    <img src={pen} alt="pen icon" className='penclass' />
+                    <img src={view} alt="view icon" className='viewclass' />
                     <img src={removeicon} alt="delete icon" />
 
               </div>
@@ -128,7 +127,7 @@ const Messages = () => {
             <p className='projectName padding3'>Nov 22, 2025</p>
        <div className='foractionbuttons2 projectName padding3'>
 
-                    <img src={pen} alt="pen icon" className='penclass' />
+                    <img src={view} alt="view icon" className='viewclass' />
                     <img src={removeicon} alt="delete icon" />
 
               </div>
