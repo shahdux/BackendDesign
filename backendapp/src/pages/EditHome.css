@@ -30,3 +30,22 @@ gap: 20px;
 flex-direction: column;
 gap: 0px;
 }
+
+@media (max-width: 600px) {
+
+   .titlewinput {
+    width: 80% ;
+}
+.inputs{
+        width: 480px !important;
+}
+}
+
+@media (max-width: 1400px) {
+    .inputs {
+        width: 360px !important;
+    }
+    .inputsCont {
+
+    padding-left: 24px;}
+}

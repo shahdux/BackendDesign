@@ -32,3 +32,13 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+
+@media (max-width: 1400px) {
+
+   .titlewinput {
+    width: 80% ;
+}
+.inputs{
+        width: 480px !important;
+}
+}
