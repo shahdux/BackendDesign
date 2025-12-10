@@ -6,7 +6,7 @@ const BlogCard = (props) => {
 <>
 <div className='blogcard'>
 
-    <img src={props.blogimg} alt="blog cover img" />
+    <img src={props.blogimg} alt="blog cover img" className='blogimgclass'/>
     <div className='for2texts'>
         <p className='blogTitle'>{props.blogtitle}</p>
                 <p className='blogDes'>{props.blogdes}</p>

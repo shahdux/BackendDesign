@@ -117,7 +117,7 @@ const Navbar = () => {
           <div className="dropdown-menu">
             <Link to="/EditHome" className="no-underline"><p>Home</p></Link>
             <Link to="/EditHome" className="no-underline"><p>About</p></Link>
-            <Link to="/EditHome" className="no-underline"><p>Blogs</p></Link>
+            <Link to="/blogs" className="no-underline"><p>Blogs</p></Link>
             <Link to="/EditHome" className="no-underline"><p>Contact</p></Link>
           </div>
         )}
