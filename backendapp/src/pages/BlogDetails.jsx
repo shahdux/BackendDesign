@@ -142,7 +142,36 @@ const Blogdetails = () => {
                 </div>
             
            
+  <div className='titlewithinput'>
+                    <p className='project-image'>SEO SETTINGS</p>
+                    
+                  
 
+                   
+                </div>
+              <div className='titlewithinput'>
+                    <p className='project-image'>Page Title</p>
+                    
+<input type="text" className='input-width' name="" id="" placeholder='What to eat UX/ UI Design App'/>  
+                  
+
+                   
+                </div>
+                   <div className='titlewithinput'>
+                    <p className='project-image'>Meta Description</p>
+                    
+<input type="text" className='input-width' name="" id="" placeholder='How a UX/ UI app helped mothers manage their cooking ingredients.'/>  
+                  
+
+                   
+                </div>   <div className='titlewithinput'>
+                    <p className='project-image'>Slug / URL</p>
+                    
+<input type="text" className='input-width' name="" id="" placeholder='Shahdmohammad.com/Blog/What-to-eat'/>  
+                  
+
+                   
+                </div>
             <div className='buttoncont'>
                 <Button buttontext="Save" buttonwidth="200px"/>
             </div>

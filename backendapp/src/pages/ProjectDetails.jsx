@@ -137,8 +137,36 @@ const ProjectDetails = () => {
 
                    
                 </div>
-            
-           
+                 <div className='titlewithinput'>
+                    <p className='project-image'>SEO SETTINGS</p>
+                    
+                  
+
+                   
+                </div>
+              <div className='titlewithinput'>
+                    <p className='project-image'>Page Title</p>
+                    
+<input type="text" className='input-width' name="" id="" placeholder='Art mentor App UX/ UI Project'/>  
+                  
+
+                   
+                </div>
+                   <div className='titlewithinput'>
+                    <p className='project-image'>Meta Description</p>
+                    
+<input type="text" className='input-width' name="" id="" placeholder='An AI art assitance UI UX app that helps designers with their design process.'/>  
+                  
+
+                   
+                </div>   <div className='titlewithinput'>
+                    <p className='project-image'>Slug / URL</p>
+                    
+<input type="text" className='input-width' name="" id="" placeholder='Shahdmohammad.com/projects/art-metor-app'/>  
+                  
+
+                   
+                </div>
 
             <div className='buttoncont'>
                 <Button buttontext="Save" buttonwidth="200px"/>
