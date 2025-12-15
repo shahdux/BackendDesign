@@ -1,3 +1,13 @@
 .marginleft90{
     margin-left: 90px;
 }
+
+
+@media (max-width: 700px) {
+
+
+    .padding2 {
+       display: none;
+    }
+   
+}

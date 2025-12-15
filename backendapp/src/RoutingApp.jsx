@@ -10,6 +10,7 @@ import Blogs from './pages/Blogs';
 import Blogdetails from './pages/BlogDetails';
 import EditHome from './pages/EditHome';
 import Messages from './pages/Messages';
+import MessageModal from './pages/MessageModal';
 
 
 
@@ -28,6 +29,8 @@ const RoutingApp = () => {
 <Route path='/blogdetails' element={<Blogdetails />}/>
 <Route path='/EditHome' element={<EditHome />}/>
 <Route path='/messages' element={<Messages />}/>
+<Route path='/messageForm' element={<MessageModal />}/>
+
 
 
 

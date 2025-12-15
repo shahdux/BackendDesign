@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import "./Projects.css";
 import Navbar from '../component/Navbar';
 import SectionTitle from '../component/SectionTitle';
@@ -8,12 +8,27 @@ import StrokeButton from '../component/StrokeButton';
 import pen from "../assets/pen.svg";
 import removeicon from "../assets/delete.svg";
 import { Link } from 'react-router-dom';
+import { supabase } from '../Supabase';
 
 
 
 const Projects = () => {
+      const [loading, setLoading] = useState(true);
+      const [projects, setProjects] = useState("");
+
+      useEffect(()=>{
+            async function callGetAPI(){
+                  const res = await supabase.from("Projects").select("*");
+                  setProjects(res.data);
+                  // console.log(res);
+                  setLoading(false);
+            }
+            callGetAPI();
+      },[]);
+      if (loading) return <p>Loading...</p>;
     return ( 
-        <>
+          <>
+          {/* {console.log(Projects)} */}
          <div className='nabarwithmain'>
         <Navbar/>
         <div className='mainBar'>
@@ -43,7 +58,7 @@ const Projects = () => {
 
 
     </div>
-     <div className='forfirstline22 gap40'>
+     {/* <div className='forfirstline22 gap40'>
       <img src={p1} alt="Art Mentor App" className='paddingtop'/>
             <p className='projectName paddingleft130 pwidthauto'>UX/UI</p>
             <p className='projectName padding22 pwidthauto pleft75i'>Art Mentor App</p>
@@ -61,8 +76,34 @@ const Projects = () => {
            
 
 
+    </div> */}
+    {
+      projects.map((project)=>{
+            return   <div className='forfirstline22 gap40'>
+      <img src={p1} alt="Art Mentor App" className='paddingtop'/>
+            <p className='projectName paddingleft130 pwidthauto'>{project.Category}</p>
+            <p className='projectName padding22 pwidthauto pleft75i'>{project.title}</p>
+
+              <p className='projectName projectpaddingledt20 pwidthauto'>{project.description}</p>
+              <div className='foractionbuttons '>
+                  <Link to="/project1" className='no-underline'>
+
+                    <img src={pen} alt="pen icon" className='penclass' />
+                    </Link>
+                    <img src={removeicon} alt="delete icon" />
+
+              </div>
+
+           
+
+
     </div>
-     <div className='forfirstline22 gap40'>
+      })
+    }
+
+
+
+     {/* <div className='forfirstline22 gap40'>
       <img src={p1} alt="Art Mentor App" className='paddingtop'/>
             <p className='projectName paddingleft130 pwidthauto'>UX/UI</p>
 
@@ -141,7 +182,7 @@ const Projects = () => {
            
 
 
-    </div>
+    </div> */}
     
       
 </div>
