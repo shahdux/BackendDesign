@@ -80,7 +80,7 @@ const Projects = () => {
     {
       projects.map((project)=>{
             return   <div className='forfirstline22 gap40'>
-      <img src={p1} alt="Art Mentor App" className='paddingtop'/>
+      <img src={project.image} alt="Art Mentor App" className='paddingtop'/>
             <p className='projectName paddingleft130 pwidthauto'>{project.Category}</p>
             <p className='projectName padding22 pwidthauto pleft75i'>{project.title}</p>
 
