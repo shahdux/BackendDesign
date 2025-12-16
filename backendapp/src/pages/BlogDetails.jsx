@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import "./ProjectDetails.css"
 import Navbar from '../component/Navbar';
 import SectionTitle from '../component/SectionTitle';
@@ -16,6 +16,7 @@ import bullet from "../assets/bullet.svg";
 import bold from "../assets/bold.svg";
 import Button from '../component/Button';
 import { Link } from 'react-router-dom';
+import { supabase } from '../Supabase';
 
 
 
@@ -27,6 +28,19 @@ import { Link } from 'react-router-dom';
 
 
 const Blogdetails = () => {
+    //   const [loading, setLoading] = useState(true);
+    //           const [blogdetails, setBlogdetails] = useState("");
+        
+    //           useEffect(()=>{
+    //                 async function callGetAPI4(){
+    //                       const res = await supabase.from("Blogs").select("*");
+    //                       setBlogdetails(res.data);
+    //                       // console.log(res);
+    //                       setLoading(false);
+    //                 }
+    //                 callGetAPI4();
+    //           },[]);
+    //           if (loading) return <p>Loading...</p>;
     return ( 
         <>
                  <div className='nabarwithmain'>
@@ -49,6 +63,13 @@ const Blogdetails = () => {
                         <img src={artmentorapp} alt="art mentor ux ui app mockup" />
                     </div>
 <div className='imagechnage'>
+      {/* {
+           blogdetails.map((blogdetail)=>{
+             return    <div className='inputforiumage'>
+                        <img src={blogdetail.Image} alt="art mentor ux ui app mockup" />
+                    </div>
+            })
+          } */}
     <p className='change '>Change Image</p>
     <img src={upload} alt="upload icon"/>
 </div>

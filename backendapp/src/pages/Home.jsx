@@ -1,11 +1,26 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import "./Home.css"
 import Navbar from '../component/Navbar';
 import SectionTitle from '../component/SectionTitle';
 import StatisticCard from '../component/StatisticCard';
 import visitsdata from "../assets/data.svg"
 import TableHeader from '../component/TableHeader';
+import { supabase } from '../Supabase';
+
 const Home = () => {
+      const [loading, setLoading] = useState(true);
+          const [projects, setProjects] = useState("");
+    
+          useEffect(()=>{
+                async function callGetAPI(){
+                      const res = await supabase.from("Projects").select("*");
+                      setProjects(res.data);
+                      // console.log(res);
+                      setLoading(false);
+                }
+                callGetAPI();
+          },[]);
+          if (loading) return <p>Loading...</p>;
     return ( 
         <>
         <div className='nabarwithmain'>
@@ -50,37 +65,21 @@ const Home = () => {
        <TableHeader tableheadertext="Status"/>
 
     </div>
-     <div className='forfirstline2'>
-      <p className='projectName'>AR Escape Game</p>
-            <p className='projectName'>AR</p>
-              <p className='projectName padding2'>Oct 2025</p>
+    
+     {
+      projects.map((project)=>{
+            return   <div className='forfirstline2'>
+      <p className='projectName'>{project.title}</p>
+            <p className='projectName'>{project.Category}</p>
+              <p className='projectName padding2'>{project.created_at}</p>
             <p className='projectName padding3'>Published</p>
 
 
-    </div>
-       <div className='forfirstline2'>
-      <p className='projectName'>AR Escape Game</p>
-            <p className='projectName'>AR</p>
-        <p className='projectName padding2'>Oct 2025</p>
-            <p className='projectName padding3'>Published</p>
-
-
-    </div>
-      <div className='forfirstline2'>
-      <p className='projectName'>AR Escape Game</p>
-            <p className='projectName'>AR</p>
-            <p className='projectName padding2'>Oct 2025</p>
-            <p className='projectName padding3'>Published</p>
-
-
-    </div>  <div className='forfirstline2'>
-      <p className='projectName'>AR Escape Game</p>
-            <p className='projectName'>AR</p>
-            <p className='projectName padding2'>Oct 2025</p>
-            <p className='projectName padding3'>Published</p>
-
-
-    </div>
+    </div> 
+      })
+    }
+     
+    
 </div>
             </div>
         </div>
