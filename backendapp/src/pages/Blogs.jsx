@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import "./Blogs.css";
 import Navbar from '../component/Navbar';
 import SectionTitle from '../component/SectionTitle';
@@ -7,11 +7,26 @@ import BlogCard from '../component/BlogCard';
 import blogimg1 from '../assets/blogimg1.svg';
 import blogimg2 from '../assets/blogimg2.svg';
 import { Link } from 'react-router-dom';
+import { supabase } from '../Supabase';
+
 
 
 
 
 const Blogs = () => {
+   const [loading, setLoading] = useState(true);
+          const [blogs, setBlogs] = useState("");
+    
+          useEffect(()=>{
+                async function callGetAPI3(){
+                      const res = await supabase.from("Blogs").select("*");
+                      setBlogs(res.data);
+                      // console.log(res);
+                      setLoading(false);
+                }
+                callGetAPI3();
+          },[]);
+          if (loading) return <p>Loading...</p>;
     return ( 
         <>
           <div className='nabarwithmain'>
@@ -30,8 +45,7 @@ const Blogs = () => {
                 <StrokeButton strokebtext="Add Blog" />
                 
             </div>
-            <div className='forblogsdiv'>
-                <Link to="/blogdetails" className='no-underline'>
+                {/* <Link to="/blogdetails" className='no-underline'>
                 <BlogCard
                 blogimg={blogimg1}
                  blogtitle="How I helped mothers manage their cooking ingredients"
@@ -42,13 +56,22 @@ const Blogs = () => {
                 blogimg={blogimg2}
                  blogtitle="Top Qualities of a Professional UI Designer in Egypt"
                 blogdes="There are some important qualities evry UI designer in Egypt should have."
-                />
-            </div>
+                /> */}
+         
 
+        <div className='forblogsdiv'>
+         {
+           blogs.map((blog)=>{
+             return   <div className='forblogsdiv'>  <BlogCard
+             blogimg={blog.Thumbnail}
+             blogtitle={blog.Title}
+             blogdes={blog.description}
+             /></div>
+            })
+          }
         </div>
-        </div>
-        
-        
+          </div>
+          </div>
         </>
      );
 }
