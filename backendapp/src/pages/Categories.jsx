@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import "./Categories.css";
 import Navbar from '../component/Navbar';
 import SectionTitle from '../component/SectionTitle';
@@ -7,11 +7,25 @@ import StrokeButton from '../component/StrokeButton';
 import catimg1 from "../assets/catimg.svg";
 import pen from "../assets/pen.svg";
 import removeicon from "../assets/delete.svg";
+import { supabase } from '../Supabase';
 
 
 
 
 const Categories = () => {
+    const [loading, setLoading] = useState(true);
+        const [categories, setCategories] = useState("");
+  
+        useEffect(()=>{
+              async function callGetAPI2(){
+                    const res = await supabase.from("Categories").select("*");
+                    setCategories(res.data);
+                    // console.log(res);
+                    setLoading(false);
+              }
+              callGetAPI2();
+        },[]);
+        if (loading) return <p>Loading...</p>;
     return ( 
         <>
          <div className='nabarwithmain'>
@@ -34,7 +48,7 @@ const Categories = () => {
        <TableHeader tableheadertext="Actions"/>
 
     </div>
-     <div className='forfirstline2'>
+     {/* <div className='forfirstline2'>
         <div className='imgcont'>
 
         <img src={catimg1} alt="mockup of a TVOS design" className='paddingtop'/>
@@ -127,7 +141,29 @@ const Categories = () => {
                           </div>
 
 
+    </div> */}
+
+
+    {
+ categories.map((category)=>{
+            return  <div className='forfirstline2'>
+        <div className='imgcont'>
+
+        <img src={category.Thumbnail} alt="mockup of a TVOS design" className='paddingtop'/>
+        </div>
+            <p className='projectName'>{category.Name}</p>
+              <p className='projectName padding2'>{category.Description}</p>
+              <div className='foractionbuttons2 imgcont'>
+
+                                <img src={pen} alt="pen icon" />
+                                <img src={removeicon} alt="delete icon" />
+            
+                          </div>
+
+
     </div>
+      })
+    }
 </div>
             </div>
         </div>
