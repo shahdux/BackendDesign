@@ -27,14 +27,16 @@ import { supabase } from '../Supabase';
 
 
 const Addcategory = () => {
-// const [image, setImage] = useState(""); 
+const [image, setImage] = useState(""); 
 const [title, setTitle] = useState("");
 const [description, setDescription] = useState("");
 async function saveCategory() {
   const res = await supabase.from("Categories").insert({
      
       "Name": title,
-      "Description": description});}
+      "Description": description,
+    "Image":image});}
+  
     return ( 
         <>
                  <div className='nabarwithmain'>
@@ -51,8 +53,10 @@ async function saveCategory() {
                 <div className='titlewithinput'>
                     <p className='project-image imagemargintop'>Image</p>
                     <div className='imagewithbutton'>
-                    <div className='inputforiumage'>
-                        <img src={artmentorapp} alt="art mentor ux ui app mockup" />
+                    <div className='inputforiumage inputforiumagec'>
+                        <input onChange={(e) => setImage(e.target.value)} type="text" className='input-width' name="" id="" placeholder=''/>  
+
+                        {/* <img src={artmentorapp} alt="art mentor ux ui app mockup" /> */}
                     </div>
 
                     </div>
@@ -103,10 +107,10 @@ async function saveCategory() {
             {/* <div className='buttoncont'>
                 <Button onClick={saveCategory} buttontext="Save" buttonwidth="200px"/>
             </div> */}
-            <button onClick={saveCategory}>save</button>
-            {/* <div onClick={saveCategory} className='buttoncont'>
+            {/* <button onClick={saveCategory}>save</button> */}
+            <div onClick={saveCategory} className='buttoncont'>
   <Button buttontext="Save" buttonwidth="200px"/>
-</div> */}
+</div>
             </div>
         </div>
         </div>

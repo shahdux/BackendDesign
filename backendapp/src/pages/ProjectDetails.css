@@ -16,6 +16,11 @@ border-radius: 10px;
 background: #FFF;
 box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.59);
 }
+.inputforiumagec{
+    height:auto;
+    background: none;
+    padding: 0;
+}
 .imagechnage{
     display: flex;
     align-items: center;

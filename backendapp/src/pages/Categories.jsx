@@ -8,12 +8,14 @@ import catimg1 from "../assets/catimg.svg";
 import pen from "../assets/pen.svg";
 import removeicon from "../assets/delete.svg";
 import { supabase } from '../Supabase';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 
 
 
 const Categories = () => {
+      const { id } = useParams();
+
     const [loading, setLoading] = useState(true);
         const [categories, setCategories] = useState("");
   
@@ -26,7 +28,11 @@ const Categories = () => {
               }
               callGetAPI2();
         },[]);
+         async function deleteRow(id) {
+  const res = await supabase.from("Categories").delete().eq("id",id);}
+         
         if (loading) return <p>Loading...</p>;
+        
     return ( 
         <>
          <div className='nabarwithmain'>
@@ -34,7 +40,7 @@ const Categories = () => {
         <div className='mainBar'>
             <div className='titlewsearch'>
             <SectionTitle Sectiontitle="Categories Management"/>
-             <Link to="/add-category">
+             <Link to="/add-category" className='no-underline'>
             <StrokeButton strokebtext="Add category"/>
              </Link>
 
@@ -159,7 +165,10 @@ const Categories = () => {
               <div className='foractionbuttons2 imgcont'>
 
                                 <img src={pen} alt="pen icon" />
+                                <button onClick={()=>deleteRow(category.id)}>
+
                                 <img src={removeicon} alt="delete icon" />
+                                </button>
             
                           </div>
 
