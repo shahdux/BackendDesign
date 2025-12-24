@@ -35,7 +35,9 @@ const Projects = () => {
            
             <div className='titlewsearch width90'>
             <SectionTitle Sectiontitle="Project Management"/>
+           
             <StrokeButton strokebtext="Add project"/>
+           
 
             </div>
          <input className='searchcont width90' type="text" name="" id="" placeholder='Search'  />

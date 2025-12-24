@@ -8,6 +8,7 @@ import catimg1 from "../assets/catimg.svg";
 import pen from "../assets/pen.svg";
 import removeicon from "../assets/delete.svg";
 import { supabase } from '../Supabase';
+import { Link } from 'react-router-dom';
 
 
 
@@ -33,7 +34,9 @@ const Categories = () => {
         <div className='mainBar'>
             <div className='titlewsearch'>
             <SectionTitle Sectiontitle="Categories Management"/>
+             <Link to="/add-category">
             <StrokeButton strokebtext="Add category"/>
+             </Link>
 
             </div>
            

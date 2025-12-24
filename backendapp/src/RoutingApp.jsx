@@ -11,6 +11,7 @@ import Blogdetails from './pages/BlogDetails';
 import EditHome from './pages/EditHome';
 import Messages from './pages/Messages';
 import MessageModal from './pages/MessageModal';
+import Addcategory from './pages/Addcategory';
 
 
 
@@ -30,6 +31,7 @@ const RoutingApp = () => {
 <Route path='/EditHome' element={<EditHome />}/>
 <Route path='/messages' element={<Messages />}/>
 <Route path='/messageForm' element={<MessageModal />}/>
+<Route path='/add-category' element={<Addcategory />}/>
 
 
 
