@@ -30,15 +30,16 @@ import { useParams } from 'react-router-dom';
 const EditCategory = () => {
        const [loading, setLoading] = useState(true);
     const {id} = useParams();
-    const [title, setTitle] = useState("");
-const [description, setDescription] = useState("");
-const [image, setImage] = useState("");
+//    const [image, setImage] = useState(""); 
+   const [data, setData] = useState("");
+//    const [description, setDescription] = useState("");
 
-    const [data,setData] = useState();
+
     useEffect(()=>{
         async function calleditAPI(id) {
   const res = await supabase.from("Categories").select("*").eq("id",id)
   setData(res.data[0]);
+//    setDescription(res.description[0]);
   setLoading(false);
  
 }
@@ -55,7 +56,7 @@ calleditAPI(id);
         <Navbar/>
         <div className='mainBar'>
             <div className='titlewsearch'>
-            <SectionTitle Sectiontitle="Add Category"/>
+            <SectionTitle Sectiontitle="Edit Category"/>
           
 
             </div>
@@ -65,7 +66,7 @@ calleditAPI(id);
                     <p className='project-image imagemargintop'>Image</p>
                     <div className='imagewithbutton'>
                     <div className='inputforiumage inputforiumagec'>
-                        <input value={data.id} type="text" className='input-width' name="" id="" placeholder=''/>  
+                        <input value={data.title} type="text" className='input-width' name="" id="" placeholder=''/>  
 
                     </div>
 
