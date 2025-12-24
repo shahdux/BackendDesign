@@ -155,6 +155,7 @@ const Categories = () => {
 
     {
  categories.map((category)=>{
+  
             return  <div className='forfirstline2'>
         <div className='imgcont'>
 
@@ -163,8 +164,11 @@ const Categories = () => {
             <p className='projectName'>{category.Name}</p>
               <p className='projectName padding2'>{category.Description}</p>
               <div className='foractionbuttons2 imgcont'>
+                <Link to ={"/edit-category/"+category.id}>
+                                <button style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textDecoration: 'none' }}>
 
-                                <img src={pen} alt="pen icon" />
+                                <img src={pen} alt="pen icon" /> edit </button>
+                </Link>
                                 <button onClick={()=>deleteRow(category.id)}>
 
                                 <img src={removeicon} alt="delete icon" />
