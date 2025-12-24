@@ -5,8 +5,24 @@ import SectionTitle from '../component/SectionTitle';
 import Titlewinput from '../component/Titlewinput';
 import profileimg from "../assets/profile.svg"
 import Button from '../component/Button';
+import { supabase } from '../Supabase';
+
 const Settings = () => {
+        //  const [loading, setLoading] = useState(true);
+        //         const [settings, setSettings] = useState("");
+          
+        //         useEffect(()=>{
+        //               async function callGetAPI5(){
+        //                     const res = await supabase.from("ProfileSettings").select("*");
+        //                     setSettings(res.data);
+        //                     // console.log(res);
+        //                     setLoading(false);
+        //               }
+        //               callGetAPI5();
+        //         },[]);
+        //         if (loading) return <p>Loading...</p>;
     return ( 
+        
         <>
         
           <div className='nabarwithmain'>

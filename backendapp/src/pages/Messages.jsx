@@ -8,9 +8,11 @@ import view from "../assets/view.svg";
 import removeicon from "../assets/delete.svg";
 import MessageModal from "../pages/MessageModal"; 
 import { supabase } from '../Supabase';
+import { Link, useParams } from 'react-router-dom';
 
 
-const Messages = () => {
+const Messages = (params) => {
+    const { id } = useParams();
 
     const [showModal, setShowModal] = useState(false);
      const [loading, setLoading] = useState(true);
@@ -25,6 +27,10 @@ const Messages = () => {
                   }
                   callGetAPI2();
             },[]);
+            async function deleteRow(id){
+                const res = await supabase.from("Messages").delete().eq("id",id);
+                console.log(res)
+            }
             if (loading) return <p>Loading...</p>;
 
     return ( 
@@ -58,21 +64,27 @@ const Messages = () => {
 
                          {
       messages.map((message)=>{
+        let pathLink = "/msg-details/"+message.id;
             return    <div className='forfirstline2 marginleft90'>
+                <Link to={pathLink}>{message.id}</Link>
                             <p className='projectName'>{message.Sender}</p>
                             <p className='projectName'>{message.Email}</p>
                             <p className='projectName padding2'>{message.Subject}</p>
                             <p className='projectName padding3'>{message.date_received}</p>
+                            {/* <button onClick={()=>deleteRow(message.id)}>delete</button> */}
 
                             <div className='foractionbuttons2 projectName padding3'>
+                                
                                 <img 
                                     src={view} 
                                     alt="view icon" 
                                     className='viewclass'
                                     onClick={() => setShowModal(true)}
                                 />
+<button onClick={()=>deleteRow(message.id)}>
 
                                 <img src={removeicon} alt="delete icon" />
+</button>
                             </div>
                         </div> 
       })

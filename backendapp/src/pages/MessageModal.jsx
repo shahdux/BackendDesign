@@ -1,8 +1,19 @@
-import React, { useState  } from 'react';
+import React, { useEffect, useState  } from 'react';
 import "./MessageModal.css";
 import SectionTitle from './../component/SectionTitle';
 import close from "../assets/close.svg"
+import { useParams } from 'react-router-dom';
+import { supabase } from '../Supabase';
 const MessageModal = ({ onClose }) => {
+    // const {id} = useParams()
+    // const [data, setData] = useState("");
+    // useEffect(({
+    //     function callRow(){
+    //         const res = supabase.from("contact").select("*").eq("id",id);
+    //         setData(res.data);
+    //     }
+    // }))
+    
     return ( 
 <>
 <div className="modal-overlay">
@@ -40,7 +51,12 @@ Looking forward to your reply!Best regards,Sarah</p>
 
 </div>
 </div>
-
+{/* {
+    msg.map(m)=>{
+        let path = "/msg-details/"+m.id;
+        return 
+    }
+} */}
 
 </>
 
