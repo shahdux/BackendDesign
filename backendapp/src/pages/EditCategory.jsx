@@ -28,18 +28,20 @@ import { useParams } from 'react-router-dom';
 
 
 const EditCategory = () => {
+  
        const [loading, setLoading] = useState(true);
     const {id} = useParams();
-//    const [image, setImage] = useState(""); 
+
    const [data, setData] = useState("");
-//    const [description, setDescription] = useState("");
+
 
 
     useEffect(()=>{
         async function calleditAPI(id) {
-  const res = await supabase.from("Categories").select("*").eq("id",id)
+  const res = await supabase.from("Categories").select("*").eq("id",id);
+  
   setData(res.data[0]);
-//    setDescription(res.description[0]);
+
   setLoading(false);
  
 }
@@ -66,7 +68,7 @@ calleditAPI(id);
                     <p className='project-image imagemargintop'>Image</p>
                     <div className='imagewithbutton'>
                     <div className='inputforiumage inputforiumagec'>
-                        <input value={data.title} type="text" className='input-width' name="" id="" placeholder=''/>  
+                        <input type="text" className='input-width' name="" id="" placeholder={data.Image}/>  
 
                     </div>
 
@@ -78,7 +80,7 @@ calleditAPI(id);
                   <div className='titlewithinput'>
                     <p className='project-image'>Title</p>
                     
-<input type="text" className='input-width' name="" id="" placeholder=''/>  
+<input type="text" className='input-width' name="" id="" placeholder={data.Name}/>  
                   
 
                    
@@ -104,7 +106,7 @@ calleditAPI(id);
 
 
 </div>
-<input type="text" className='input-width2' name="" id="" placeholder=''/>  
+<input type="text" className='input-width2' name="" id="" placeholder={data.description2}/>  
                     </div>
                   
 
