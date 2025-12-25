@@ -34,6 +34,8 @@ const EditCategory = () => {
 
      const [name, setName] = useState("");
           const [img, setImg] = useState("");
+                    const [img2, setImg2] = useState("");
+
      const [desc, setDesc] = useState("");
           const [desc2, setDesc2] = useState("");
 
@@ -48,6 +50,7 @@ const EditCategory = () => {
 
   setName(res.data[0].Name);
     setImg(res.data[0].Image);
+     setImg2(res.data[0].Thumbnail);
   setDesc(res.data[0].description2);
     setDesc2(res.data[0].Description);
 
@@ -66,6 +69,7 @@ calleditAPI(id);
         "description2": desc,
         "Description": desc2,
         "Image": img,
+        "Thumbnail": img2,
       }).eq("id",id);
       
     }
@@ -95,6 +99,17 @@ calleditAPI(id);
 
                     </div>
 
+                    
+
+                </div>
+                  
+  <div className='titlewithinput'>
+                    <p className='project-image'>Thumbnail</p>
+                    
+                        <input value={img2} onChange={(e) => setImg2(e.target.value)} type="text" className='input-width' name="" id="" placeholder=""/>  
+                  
+
+                   
                 </div>
                  
 
