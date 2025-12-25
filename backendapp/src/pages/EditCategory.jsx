@@ -35,6 +35,8 @@ const EditCategory = () => {
      const [name, setName] = useState("");
           const [img, setImg] = useState("");
      const [desc, setDesc] = useState("");
+          const [desc2, setDesc2] = useState("");
+
 
 
 
@@ -47,6 +49,9 @@ const EditCategory = () => {
   setName(res.data[0].Name);
     setImg(res.data[0].Image);
   setDesc(res.data[0].description2);
+    setDesc2(res.data[0].Description);
+
+  
 
 
   setLoading(false);
@@ -58,7 +63,9 @@ calleditAPI(id);
     async function save() {
       const res = await supabase.from("Categories").update({
         "Name":name,
-        "description2": desc
+        "description2": desc,
+        "Description": desc2,
+        "Image": img,
       }).eq("id",id);
       
     }
@@ -101,7 +108,7 @@ calleditAPI(id);
                 </div>
                
                  <div className='titlewithinput'>
-                    <p className='project-image'>Description</p>
+                    <p className='project-image'>Short Description</p>
                     <div className='rte1'>
 <div className='foriconst'>
 <img src={bold} alt="bold icon" />
@@ -121,6 +128,32 @@ calleditAPI(id);
 
 </div>
 <input value={desc} onChange={(e) => setDesc(e.target.value)} type="text" className='input-width2' name="" id="" placeholder=""/>  
+                    </div>
+                  
+
+                   
+                </div>
+                  <div className='titlewithinput'>
+                    <p className='project-image'>Long Description</p>
+                    <div className='rte1'>
+<div className='foriconst'>
+<img src={bold} alt="bold icon" />
+<img src={it} alt="italic icon" />
+<img src={underline} alt="underline icon" />
+<img src={center} alt="center icon" />
+<img src={left} alt="leftside icon" />
+<img src={center2} alt="center icon" />
+<img src={bullet} alt="bullet points icon" />
+<img src={numbered} alt="numbered icon" />
+<img src={fill} alt="fill icon" />
+<img src={textcase} alt="textcase icon" />
+
+
+
+
+
+</div>
+<input value={desc2} onChange={(e) => setDesc2(e.target.value)} type="text" className='input-width2' name="" id="" placeholder=""/>  
                     </div>
                   
 
