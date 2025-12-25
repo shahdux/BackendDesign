@@ -108,7 +108,7 @@ calleditAPI(id);
                 </div>
                
                  <div className='titlewithinput'>
-                    <p className='project-image'>Short Description</p>
+                    <p className='project-image'>Long Description</p>
                     <div className='rte1'>
 <div className='foriconst'>
 <img src={bold} alt="bold icon" />
@@ -134,7 +134,7 @@ calleditAPI(id);
                    
                 </div>
                   <div className='titlewithinput'>
-                    <p className='project-image'>Long Description</p>
+                    <p className='project-image'>Short Description</p>
                     <div className='rte1'>
 <div className='foriconst'>
 <img src={bold} alt="bold icon" />
