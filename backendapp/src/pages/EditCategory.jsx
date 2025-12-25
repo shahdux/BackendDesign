@@ -32,22 +32,36 @@ const EditCategory = () => {
        const [loading, setLoading] = useState(true);
     const {id} = useParams();
 
-   const [data, setData] = useState("");
+     const [name, setName] = useState("");
+          const [img, setImg] = useState("");
+     const [desc, setDesc] = useState("");
+
+
 
 
 
     useEffect(()=>{
         async function calleditAPI(id) {
   const res = await supabase.from("Categories").select("*").eq("id",id);
-  
-  setData(res.data[0]);
+
+  setName(res.data[0].Name);
+    setImg(res.data[0].Image);
+  setDesc(res.data[0].description2);
+
 
   setLoading(false);
  
 }
 calleditAPI(id);
     
-    },[])
+    },[]);
+    async function save() {
+      const res = await supabase.from("Categories").update({
+        "Name":name,
+        "description2": desc
+      }).eq("id",id);
+      
+    }
 
   if (loading) return <p>Loading...</p>;
   
@@ -68,7 +82,7 @@ calleditAPI(id);
                     <p className='project-image imagemargintop'>Image</p>
                     <div className='imagewithbutton'>
                     <div className='inputforiumage inputforiumagec'>
-                        <input type="text" className='input-width' name="" id="" placeholder={data.Image}/>  
+                        <input value={img} onChange={(e) => setImg(e.target.value)} type="text" className='input-width' name="" id="" placeholder=""/>  
 
                     </div>
 
@@ -80,7 +94,7 @@ calleditAPI(id);
                   <div className='titlewithinput'>
                     <p className='project-image'>Title</p>
                     
-<input type="text" className='input-width' name="" id="" placeholder={data.Name}/>  
+<input value={name} onChange={(e) => setName(e.target.value)} type="text" className='input-width' name="" id="" placeholder=""/>  
                   
 
                    
@@ -106,7 +120,7 @@ calleditAPI(id);
 
 
 </div>
-<input type="text" className='input-width2' name="" id="" placeholder={data.description2}/>  
+<input value={desc} onChange={(e) => setDesc(e.target.value)} type="text" className='input-width2' name="" id="" placeholder=""/>  
                     </div>
                   
 
@@ -118,7 +132,7 @@ calleditAPI(id);
                  
 
         
-            <div  className='buttoncont'>
+            <div onClick={save}  className='buttoncont'>
   <Button buttontext="Save" buttonwidth="200px"/>
 </div>
             </div>
