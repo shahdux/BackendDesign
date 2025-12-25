@@ -31,7 +31,9 @@ const RoutingApp = () => {
 <Route path='/blogdetails' element={<Blogdetails />}/>
 <Route path='/EditHome' element={<EditHome />}/>
 <Route path='/messages' element={<Messages />}/>
-<Route path='/messageForm' element={<MessageModal />}/>
+{/* <Route path='/messageForm' element={<MessageModal />}/> */}
+<Route path='/msg-details/:id' element={<MessageModal />}/>
+
 <Route path='/add-category' element={<Addcategory />}/>
 <Route path='/edit-category/:id' element={<EditCategory />}/>
 

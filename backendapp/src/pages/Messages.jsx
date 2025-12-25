@@ -20,7 +20,7 @@ const Messages = (params) => {
       
             useEffect(()=>{
                   async function callGetAPI2(){
-                        const res = await supabase.from("Messages").select("*");
+                        const res = await supabase.from("contact").select("*");
                         setMessages(res.data);
                         // console.log(res);
                         setLoading(false);
@@ -28,7 +28,7 @@ const Messages = (params) => {
                   callGetAPI2();
             },[]);
             async function deleteRow(id){
-                const res = await supabase.from("Messages").delete().eq("id",id);
+                const res = await supabase.from("contact").delete().eq("id",id);
                 console.log(res)
             }
             if (loading) return <p>Loading...</p>;
@@ -67,10 +67,10 @@ const Messages = (params) => {
         let pathLink = "/msg-details/"+message.id;
             return    <div className='forfirstline2 marginleft90'>
                 <Link to={pathLink}>{message.id}</Link>
-                            <p className='projectName'>{message.Sender}</p>
-                            <p className='projectName'>{message.Email}</p>
-                            <p className='projectName padding2'>{message.Subject}</p>
-                            <p className='projectName padding3'>{message.date_received}</p>
+                            <p className='projectName'>{message.first_name}</p>
+                            <p className='projectName'>{message.email}</p>
+                            <p className='projectName padding2'>{message.message}</p>
+                            <p className='projectName padding3'>{message.date}</p>
                             {/* <button onClick={()=>deleteRow(message.id)}>delete</button> */}
 
                             <div className='foractionbuttons2 projectName padding3'>
